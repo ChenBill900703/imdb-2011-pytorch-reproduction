@@ -1,0 +1,235 @@
+{
+  "prefix": "repro01",
+  "results": [
+    {
+      "name": "BoW (bnc)",
+      "paper_accuracy_percent": 87.8,
+      "cv_accuracy_percent": 87.572,
+      "test_accuracy_percent": 87.376,
+      "difference_pp": -0.4239999999999924,
+      "needs_gap_review": false,
+      "C": 1,
+      "test_evidence": "runs/repro01-bow/classifier/test_metrics.json"
+    },
+    {
+      "name": "BoW (delta)",
+      "paper_accuracy_percent": 88.23,
+      "cv_accuracy_percent": 88.38000000000001,
+      "test_accuracy_percent": 88.228,
+      "difference_pp": -0.0020000000000095497,
+      "needs_gap_review": false,
+      "C": 0.1,
+      "test_evidence": "runs/repro01-delta/classifier/test_metrics.json"
+    },
+    {
+      "name": "Semantic",
+      "paper_accuracy_percent": 87.3,
+      "cv_accuracy_percent": 88.11599999999999,
+      "test_accuracy_percent": 87.732,
+      "difference_pp": 0.43200000000000216,
+      "needs_gap_review": false,
+      "C": 10,
+      "test_evidence": "runs/repro01-semantic-vectors/classifier/test_metrics.json"
+    },
+    {
+      "name": "Semantic + BoW",
+      "paper_accuracy_percent": 88.28,
+      "cv_accuracy_percent": 88.872,
+      "test_accuracy_percent": 88.684,
+      "difference_pp": 0.40399999999999636,
+      "needs_gap_review": false,
+      "C": 0.1,
+      "test_evidence": "runs/repro01-semantic-combined/classifier/test_metrics.json"
+    },
+    {
+      "name": "Full",
+      "paper_accuracy_percent": 87.44,
+      "cv_accuracy_percent": 88.084,
+      "test_accuracy_percent": 87.688,
+      "difference_pp": 0.24800000000000466,
+      "needs_gap_review": false,
+      "C": 0.1,
+      "test_evidence": "runs/repro01-full-vectors/classifier/test_metrics.json"
+    },
+    {
+      "name": "Full + BoW",
+      "paper_accuracy_percent": 88.33,
+      "cv_accuracy_percent": 88.924,
+      "test_accuracy_percent": 88.68,
+      "difference_pp": 0.3500000000000085,
+      "needs_gap_review": false,
+      "C": 0.1,
+      "test_evidence": "runs/repro01-full-combined/classifier/test_metrics.json"
+    },
+    {
+      "name": "Full + unlabeled",
+      "paper_accuracy_percent": 87.99,
+      "cv_accuracy_percent": 88.268,
+      "test_accuracy_percent": 88.396,
+      "difference_pp": 0.4060000000000059,
+      "needs_gap_review": false,
+      "C": 0.1,
+      "test_evidence": "runs/repro01-full_unsup-vectors/classifier/test_metrics.json"
+    },
+    {
+      "name": "Full + unlabeled + BoW",
+      "paper_accuracy_percent": 88.89,
+      "cv_accuracy_percent": 89.032,
+      "test_accuracy_percent": 89.004,
+      "difference_pp": 0.11400000000000432,
+      "needs_gap_review": false,
+      "C": 0.1,
+      "test_evidence": "runs/repro01-full_unsup-combined/classifier/test_metrics.json"
+    }
+  ],
+  "models": [
+    {
+      "variant": "semantic",
+      "iterations": 20,
+      "first_objective": 828.7407614950562,
+      "last_objective": 744.977733125,
+      "training_seconds": 244.4743634997867,
+      "converged": false
+    },
+    {
+      "variant": "full",
+      "iterations": 20,
+      "first_objective": 828.7468702120972,
+      "last_objective": 744.9222135437012,
+      "training_seconds": 246.5428428001469,
+      "converged": false
+    },
+    {
+      "variant": "full_unsup",
+      "iterations": 20,
+      "first_objective": 796.7253977111816,
+      "last_objective": 748.003216632487,
+      "training_seconds": 795.3365633003414,
+      "converged": false
+    }
+  ],
+  "execution": [
+    {
+      "run": "repro01-bow",
+      "status": "SUCCEEDED",
+      "seconds": 14.871359
+    },
+    {
+      "run": "repro01-bow-test",
+      "status": "SUCCEEDED",
+      "seconds": 4.216081
+    },
+    {
+      "run": "repro01-delta",
+      "status": "SUCCEEDED",
+      "seconds": 17.598658
+    },
+    {
+      "run": "repro01-delta-test",
+      "status": "SUCCEEDED",
+      "seconds": 4.089369
+    },
+    {
+      "run": "repro01-full",
+      "status": "SUCCEEDED",
+      "seconds": 252.450644
+    },
+    {
+      "run": "repro01-full-combined",
+      "status": "SUCCEEDED",
+      "seconds": 40.502484
+    },
+    {
+      "run": "repro01-full-combined-test",
+      "status": "SUCCEEDED",
+      "seconds": 4.13459
+    },
+    {
+      "run": "repro01-full-vectors",
+      "status": "SUCCEEDED",
+      "seconds": 8.311065
+    },
+    {
+      "run": "repro01-full-vectors-test",
+      "status": "SUCCEEDED",
+      "seconds": 4.173665
+    },
+    {
+      "run": "repro01-full_unsup",
+      "status": "SUCCEEDED",
+      "seconds": 803.280765
+    },
+    {
+      "run": "repro01-full_unsup-combined",
+      "status": "SUCCEEDED",
+      "seconds": 40.009248
+    },
+    {
+      "run": "repro01-full_unsup-combined-test",
+      "status": "SUCCEEDED",
+      "seconds": 4.269131
+    },
+    {
+      "run": "repro01-full_unsup-vectors",
+      "status": "SUCCEEDED",
+      "seconds": 8.247803
+    },
+    {
+      "run": "repro01-full_unsup-vectors-test",
+      "status": "SUCCEEDED",
+      "seconds": 4.080825
+    },
+    {
+      "run": "repro01-semantic",
+      "status": "SUCCEEDED",
+      "seconds": 249.995599
+    },
+    {
+      "run": "repro01-semantic-combined",
+      "status": "SUCCEEDED",
+      "seconds": 40.872397
+    },
+    {
+      "run": "repro01-semantic-combined-test",
+      "status": "SUCCEEDED",
+      "seconds": 4.189106
+    },
+    {
+      "run": "repro01-semantic-vectors",
+      "status": "SUCCEEDED",
+      "seconds": 8.431587
+    },
+    {
+      "run": "repro01-semantic-vectors-test",
+      "status": "SUCCEEDED",
+      "seconds": 4.131246
+    }
+  ],
+  "contrasts": [
+    {
+      "name": "\u52a0\u5165\u60c5\u611f\u76e3\u7763\uff08vectors\uff09",
+      "paper_gain_pp": 0.14000000000000057,
+      "observed_gain_pp": -0.04399999999999693,
+      "same_direction": false
+    },
+    {
+      "name": "\u52a0\u5165\u7121\u6a19\u7c64\u8cc7\u6599\uff08vectors\uff09",
+      "paper_gain_pp": 0.5499999999999972,
+      "observed_gain_pp": 0.7079999999999984,
+      "same_direction": true
+    },
+    {
+      "name": "\u52a0\u5165\u7121\u6a19\u7c64\u8cc7\u6599\uff08combined\uff09",
+      "paper_gain_pp": 0.5600000000000023,
+      "observed_gain_pp": 0.32399999999999807,
+      "same_direction": true
+    },
+    {
+      "name": "\u5b8c\u6574\u6a21\u578b\u4e32\u63a5\u76f8\u5c0d BoW",
+      "paper_gain_pp": 1.0900000000000034,
+      "observed_gain_pp": 1.6280000000000001,
+      "same_direction": true
+    }
+  ],
+  "complete": true
+}

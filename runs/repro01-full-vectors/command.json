@@ -1,0 +1,13 @@
+[
+  ".venv/Scripts/python.exe",
+  "-u",
+  "-m",
+  "imdb2011",
+  "fit-svm",
+  "--features",
+  "vectors",
+  "--checkpoint",
+  "runs/repro01-full/model/checkpoint.pt",
+  "--output",
+  "runs/repro01-full-vectors/classifier"
+]

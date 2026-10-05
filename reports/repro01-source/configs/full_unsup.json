@@ -1,0 +1,20 @@
+{
+  "variant": "full-unsup",
+  "dimension": 50,
+  "vocab_size": 5000,
+  "skip_top": 50,
+  "vocab_source": "labeled",
+  "lambda_theta": 1.0,
+  "nu_words": 1.0,
+  "sentiment_weight": 1.0,
+  "outer_steps": 20,
+  "theta_steps": 20,
+  "word_steps": 10,
+  "batch_size": 256,
+  "history_size": 10,
+  "relative_tolerance": 0.00001,
+  "patience": 3,
+  "seed": 42,
+  "device": "auto",
+  "dtype": "float32"
+}

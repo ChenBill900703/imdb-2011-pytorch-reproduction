@@ -1,0 +1,153 @@
+schema_version: "1.0"
+contract_version: "2.0"
+ledger_id: repro01-final-evidence
+experiment_plan_id: repro01-fixed-experiment
+status: VERIFIED
+entries:
+  - result_id: model-1
+    claim_scope: "BoW (bnc) official test accuracy"
+    result_type: SECONDARY
+    source_type: OBSERVED_RUN
+    evidence_label: EXECUTED_LOCAL
+    plan_id: repro01-fixed-experiment
+    run_ids: [repro01-bow-test]
+    source_locators: [repro01-plan.md, repro01-record-context.md]
+    input_locators: [../data/aclImdb/test/labeledBow.feat]
+    output_locators: [../runs/repro01-bow/classifier/test_metrics.json, repro01-audit.json]
+    metric_or_measurement_definition: Correct classifications divided by 25000 official test examples
+    value_locator: ../runs/repro01-bow/classifier/test_metrics.json
+    transformations: [Recorded feature pipeline and trained SVM]
+    uncertainty_or_variability: One seed only; no variability estimate
+    deviations: [Reconstruction assumptions in README; training capped at 20 rounds]
+    verification_status: VERIFIED
+    publication_claim_allowed: true
+    restriction_reason: Observed run result only; no exact-author-equivalence or superiority claim
+  - result_id: model-2
+    claim_scope: "BoW (delta) official test accuracy"
+    result_type: SECONDARY
+    source_type: OBSERVED_RUN
+    evidence_label: EXECUTED_LOCAL
+    plan_id: repro01-fixed-experiment
+    run_ids: [repro01-delta-test]
+    source_locators: [repro01-plan.md, repro01-record-context.md]
+    input_locators: [../data/aclImdb/test/labeledBow.feat]
+    output_locators: [../runs/repro01-delta/classifier/test_metrics.json, repro01-audit.json]
+    metric_or_measurement_definition: Correct classifications divided by 25000 official test examples
+    value_locator: ../runs/repro01-delta/classifier/test_metrics.json
+    transformations: [Recorded feature pipeline and trained SVM]
+    uncertainty_or_variability: One seed only; no variability estimate
+    deviations: [Reconstruction assumptions in README; training capped at 20 rounds]
+    verification_status: VERIFIED
+    publication_claim_allowed: true
+    restriction_reason: Observed run result only; no exact-author-equivalence or superiority claim
+  - result_id: model-3
+    claim_scope: "Semantic official test accuracy"
+    result_type: SECONDARY
+    source_type: OBSERVED_RUN
+    evidence_label: EXECUTED_LOCAL
+    plan_id: repro01-fixed-experiment
+    run_ids: [repro01-semantic-vectors-test]
+    source_locators: [repro01-plan.md, repro01-record-context.md]
+    input_locators: [../data/aclImdb/test/labeledBow.feat]
+    output_locators: [../runs/repro01-semantic-vectors/classifier/test_metrics.json, repro01-audit.json]
+    metric_or_measurement_definition: Correct classifications divided by 25000 official test examples
+    value_locator: ../runs/repro01-semantic-vectors/classifier/test_metrics.json
+    transformations: [Recorded feature pipeline and trained SVM]
+    uncertainty_or_variability: One seed only; no variability estimate
+    deviations: [Reconstruction assumptions in README; training capped at 20 rounds]
+    verification_status: VERIFIED
+    publication_claim_allowed: true
+    restriction_reason: Observed run result only; no exact-author-equivalence or superiority claim
+  - result_id: model-4
+    claim_scope: "Semantic + BoW official test accuracy"
+    result_type: SECONDARY
+    source_type: OBSERVED_RUN
+    evidence_label: EXECUTED_LOCAL
+    plan_id: repro01-fixed-experiment
+    run_ids: [repro01-semantic-combined-test]
+    source_locators: [repro01-plan.md, repro01-record-context.md]
+    input_locators: [../data/aclImdb/test/labeledBow.feat]
+    output_locators: [../runs/repro01-semantic-combined/classifier/test_metrics.json, repro01-audit.json]
+    metric_or_measurement_definition: Correct classifications divided by 25000 official test examples
+    value_locator: ../runs/repro01-semantic-combined/classifier/test_metrics.json
+    transformations: [Recorded feature pipeline and trained SVM]
+    uncertainty_or_variability: One seed only; no variability estimate
+    deviations: [Reconstruction assumptions in README; training capped at 20 rounds]
+    verification_status: VERIFIED
+    publication_claim_allowed: true
+    restriction_reason: Observed run result only; no exact-author-equivalence or superiority claim
+  - result_id: model-5
+    claim_scope: "Full official test accuracy"
+    result_type: SECONDARY
+    source_type: OBSERVED_RUN
+    evidence_label: EXECUTED_LOCAL
+    plan_id: repro01-fixed-experiment
+    run_ids: [repro01-full-vectors-test]
+    source_locators: [repro01-plan.md, repro01-record-context.md]
+    input_locators: [../data/aclImdb/test/labeledBow.feat]
+    output_locators: [../runs/repro01-full-vectors/classifier/test_metrics.json, repro01-audit.json]
+    metric_or_measurement_definition: Correct classifications divided by 25000 official test examples
+    value_locator: ../runs/repro01-full-vectors/classifier/test_metrics.json
+    transformations: [Recorded feature pipeline and trained SVM]
+    uncertainty_or_variability: One seed only; no variability estimate
+    deviations: [Reconstruction assumptions in README; training capped at 20 rounds]
+    verification_status: VERIFIED
+    publication_claim_allowed: true
+    restriction_reason: Observed run result only; no exact-author-equivalence or superiority claim
+  - result_id: model-6
+    claim_scope: "Full + BoW official test accuracy"
+    result_type: SECONDARY
+    source_type: OBSERVED_RUN
+    evidence_label: EXECUTED_LOCAL
+    plan_id: repro01-fixed-experiment
+    run_ids: [repro01-full-combined-test]
+    source_locators: [repro01-plan.md, repro01-record-context.md]
+    input_locators: [../data/aclImdb/test/labeledBow.feat]
+    output_locators: [../runs/repro01-full-combined/classifier/test_metrics.json, repro01-audit.json]
+    metric_or_measurement_definition: Correct classifications divided by 25000 official test examples
+    value_locator: ../runs/repro01-full-combined/classifier/test_metrics.json
+    transformations: [Recorded feature pipeline and trained SVM]
+    uncertainty_or_variability: One seed only; no variability estimate
+    deviations: [Reconstruction assumptions in README; training capped at 20 rounds]
+    verification_status: VERIFIED
+    publication_claim_allowed: true
+    restriction_reason: Observed run result only; no exact-author-equivalence or superiority claim
+  - result_id: model-7
+    claim_scope: "Full + unlabeled official test accuracy"
+    result_type: SECONDARY
+    source_type: OBSERVED_RUN
+    evidence_label: EXECUTED_LOCAL
+    plan_id: repro01-fixed-experiment
+    run_ids: [repro01-full_unsup-vectors-test]
+    source_locators: [repro01-plan.md, repro01-record-context.md]
+    input_locators: [../data/aclImdb/test/labeledBow.feat]
+    output_locators: [../runs/repro01-full_unsup-vectors/classifier/test_metrics.json, repro01-audit.json]
+    metric_or_measurement_definition: Correct classifications divided by 25000 official test examples
+    value_locator: ../runs/repro01-full_unsup-vectors/classifier/test_metrics.json
+    transformations: [Recorded feature pipeline and trained SVM]
+    uncertainty_or_variability: One seed only; no variability estimate
+    deviations: [Reconstruction assumptions in README; training capped at 20 rounds]
+    verification_status: VERIFIED
+    publication_claim_allowed: true
+    restriction_reason: Observed run result only; no exact-author-equivalence or superiority claim
+  - result_id: model-8
+    claim_scope: "Full + unlabeled + BoW official test accuracy"
+    result_type: PRIMARY
+    source_type: OBSERVED_RUN
+    evidence_label: EXECUTED_LOCAL
+    plan_id: repro01-fixed-experiment
+    run_ids: [repro01-full_unsup-combined-test]
+    source_locators: [repro01-plan.md, repro01-record-context.md]
+    input_locators: [../data/aclImdb/test/labeledBow.feat]
+    output_locators: [../runs/repro01-full_unsup-combined/classifier/test_metrics.json, repro01-audit.json]
+    metric_or_measurement_definition: Correct classifications divided by 25000 official test examples
+    value_locator: ../runs/repro01-full_unsup-combined/classifier/test_metrics.json
+    transformations: [Recorded feature pipeline and trained SVM]
+    uncertainty_or_variability: One seed only; no variability estimate
+    deviations: [Reconstruction assumptions in README; training capped at 20 rounds]
+    verification_status: VERIFIED
+    publication_claim_allowed: true
+    restriction_reason: Observed run result only; no exact-author-equivalence or superiority claim
+conflicts: []
+missing_evidence: [Multi-seed robustness, Strict convergence, Exact author hyperparameters]
+verified_by_orchestrator: false

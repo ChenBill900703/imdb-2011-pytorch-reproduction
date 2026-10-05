@@ -1,0 +1,16 @@
+{
+  "imdb2011\\classify.py": "789a44a0bf529d2abf27d084f22da90f066d6bdbdd6d82fbbe353272d5b7c21b",
+  "imdb2011\\data.py": "aaf77c60516dae2dc5fb9e78d42c7272451c33b2cd23ed8242e2601e35b5b8db",
+  "imdb2011\\model.py": "3a230f6337f3f0cdb6cb73876f6c2036adc78f9e0402a1c69e1aa9baef810bd9",
+  "imdb2011\\train.py": "fc16f1a6032937e9e0b4eb0991ce786f5c89b32b4bd41041fa4a9a855fd444b1",
+  "imdb2011\\__init__.py": "05642cba38f1150410fe1cd99a2cb46b4eaedb18f909e48936504e16e6e45177",
+  "imdb2011\\__main__.py": "95e7c41dc912a1a7681e94d56dd0dc465fb778d29f63914c55207604eb1ad0aa",
+  "configs\\benchmark.json": "68f7df11b2a7976e8ac804ea56a284deb60868dc521d5f0228592a5e305f4aa7",
+  "configs\\full.json": "d5b55a0032931206d1675d9b79f3fe01721d8cb734af5713489bd47ddf6dd9e9",
+  "configs\\full_unsup.json": "5e0253d4526f0b6e19f8cc15b646f8016ef955353267d897d14ec9951e0a8e1b",
+  "configs\\semantic.json": "7feab1d7d85d67bb9b6eefa5b0fe346275e4a1f5732d45962f8fbceba44baf34",
+  "configs\\solver_pilot.json": "b9899eec1f9f54bd803b48028431ee6673debfcd71404ae58cc40e71a3e8cf61",
+  "tests\\test_reproduction.py": "3fc618209547d647a96645e2d4fb7f1c32e66e00c5f002bae8defbbc38d52455",
+  "requirements-lock.txt": "1a6fbe9ce07e2c998146d2c9d120e5dbea57d50f2663af01d001eecc03c28e41",
+  "scripts\\record_run.py": "b7be12d198c72d5908082f1661741f124c1d980b163d5e6ab9d280d4de43309d"
+}

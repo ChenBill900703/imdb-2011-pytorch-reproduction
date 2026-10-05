@@ -1,0 +1,85 @@
+{
+  "accuracy": 0.87688,
+  "n_test": 25000,
+  "correct": 21922,
+  "confusion_matrix": [
+    [
+      10944,
+      1556
+    ],
+    [
+      1522,
+      10978
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.8779079095138778,
+      "recall": 0.87552,
+      "f1-score": 0.8767123287671232,
+      "support": 12500.0
+    },
+    "1": {
+      "precision": 0.8758576671453646,
+      "recall": 0.87824,
+      "f1-score": 0.8770472157865303,
+      "support": 12500.0
+    },
+    "accuracy": 0.87688,
+    "macro avg": {
+      "precision": 0.8768827883296212,
+      "recall": 0.87688,
+      "f1-score": 0.8768797722768268,
+      "support": 25000.0
+    },
+    "weighted avg": {
+      "precision": 0.8768827883296213,
+      "recall": 0.87688,
+      "f1-score": 0.8768797722768269,
+      "support": 25000.0
+    }
+  },
+  "test_sha256": "7fa9b4023774d0e748053c2be24f91f5d5812c3ae74cde663183908caf63f9ac",
+  "classifier_sha256": "b1d9562c1c5bbeba899bcf200c636fccc21a1c1917e015f0109f40617d92909a",
+  "selection": {
+    "features": "vectors",
+    "bow_scope": "5000",
+    "folds": 5,
+    "seed": 42,
+    "best_C": 0.1,
+    "cv_accuracy": 0.8808400000000001,
+    "candidates": [
+      {
+        "C": 0.01,
+        "mean": 0.87836,
+        "std": 0.0035986664196615862
+      },
+      {
+        "C": 0.1,
+        "mean": 0.8808400000000001,
+        "std": 0.004431523440082416
+      },
+      {
+        "C": 1,
+        "mean": 0.8807599999999999,
+        "std": 0.004725082009870321
+      },
+      {
+        "C": 10,
+        "mean": 0.88072,
+        "std": 0.004466049708635169
+      },
+      {
+        "C": 100,
+        "mean": 0.8806799999999999,
+        "std": 0.004505285784498054
+      }
+    ],
+    "checkpoint_sha256": "979ff1d6ea8c7aba41625173a0c2c87516392ee0cdd2e8242c31cdf0c5e63998",
+    "fingerprint": {
+      "imdb.vocab": "01a13a306bd9e5a7826b8a0fc25a7a6017f143d86c1582f17857bb731fd252dc",
+      "train/labeledBow.feat": "d7061edc0ed10ad094c5c6da49648db0d9567b0415de2a86ce0e4ea2b1a3cff9"
+    },
+    "cv_scope": "Classifier-only CV with frozen word vectors. If vectors used labels, CV scores are conditional and NOT an unbiased end-to-end validation estimate."
+  }
+}

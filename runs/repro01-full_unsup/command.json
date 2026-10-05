@@ -1,0 +1,11 @@
+[
+  ".venv/Scripts/python.exe",
+  "-u",
+  "-m",
+  "imdb2011",
+  "train",
+  "--config",
+  "configs/full_unsup.json",
+  "--output",
+  "runs/repro01-full_unsup/model"
+]

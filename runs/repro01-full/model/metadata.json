@@ -1,0 +1,35 @@
+{
+  "config": {
+    "variant": "full",
+    "dimension": 50,
+    "vocab_size": 5000,
+    "skip_top": 50,
+    "vocab_source": "labeled",
+    "lambda_theta": 1.0,
+    "nu_words": 1.0,
+    "sentiment_weight": 1.0,
+    "outer_steps": 20,
+    "theta_steps": 20,
+    "word_steps": 10,
+    "batch_size": 256,
+    "history_size": 10,
+    "relative_tolerance": 1e-05,
+    "patience": 3,
+    "seed": 42,
+    "device": "auto",
+    "dtype": "float32"
+  },
+  "fingerprint": {
+    "imdb.vocab": "01a13a306bd9e5a7826b8a0fc25a7a6017f143d86c1582f17857bb731fd252dc",
+    "train/labeledBow.feat": "d7061edc0ed10ad094c5c6da49648db0d9567b0415de2a86ce0e4ea2b1a3cff9"
+  },
+  "labeled_rows": 25000,
+  "semantic_rows": 25000,
+  "empty_rows": 0,
+  "python": "3.12.14",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti"
+}

@@ -1,0 +1,11 @@
+[
+  ".venv/Scripts/python.exe",
+  "-u",
+  "-m",
+  "imdb2011",
+  "fit-svm",
+  "--features",
+  "delta",
+  "--output",
+  "runs/repro01-delta/classifier"
+]

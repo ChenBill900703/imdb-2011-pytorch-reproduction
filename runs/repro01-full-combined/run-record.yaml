@@ -1,0 +1,59 @@
+schema_version: "1.0"
+contract_version: "2.0"
+run_id: "repro01-full-combined"
+parent_run_id: null
+experiment_plan_id: imdb2011-code-validation
+plan_version: "1"
+experiment_mode: COMPUTATIONAL_AI
+run_status: SUCCEEDED
+execution_claim: true
+started_at: "2026-10-04T15:20:20.687440+00:00"
+ended_at: "2026-10-04T15:21:01.189924+00:00"
+responsible_role: local-assistant
+inputs:
+  input_locators:
+    - ../../configs
+  data_or_material_versions:
+    - aclImdb_v1
+  source_or_protocol_locators:
+    - ../../imdb2011
+    - source_hashes.json
+  configuration_locators:
+    - command.json
+execution:
+  planned_command_or_procedure: See command.json
+  actual_command_or_procedure_locator: command.json
+  environment_or_instrument_locator: ../../requirements-lock.txt
+  software_or_instrument_versions:
+    - ../../requirements-lock.txt
+  seeds:
+    - 42
+  nondeterminism_notes:
+    - Platform and BLAS differences may change floating-point results
+hardware_evidence:
+  discovery_source: USER_REPORTED
+  evidence_locator: user:conversation-hardware
+  read_only_command: null
+  command_output_locators: []
+  confirmation_status: USER_CONFIRMED
+  confirmation_locator: user:RTX3070Ti-8GB
+evidence:
+  log_locators:
+    - stdout.log
+  output_locators:
+    - stdout.log
+  checkpoint_locators: []
+  checksums_or_stable_ids:
+    - source_hashes.json
+  warnings: []
+  primary_observation_available: false
+simulation:
+  usage: NONE
+  label: null
+  purpose: Code validation or diagnostic run only
+  result_claim_allowed: false
+deviations: []
+termination_reason: "exit 0"
+invalidated_reason: null
+operator_or_user_confirmation: user:continue-unfinished-implementation
+integrity_ledger_entry_ids: []

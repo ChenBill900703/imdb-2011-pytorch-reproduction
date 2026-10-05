@@ -1,0 +1,11 @@
+[
+  ".venv/Scripts/python.exe",
+  "-u",
+  "-m",
+  "imdb2011",
+  "train",
+  "--config",
+  "configs/semantic.json",
+  "--output",
+  "runs/repro01-semantic/model"
+]

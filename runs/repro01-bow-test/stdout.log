@@ -1,0 +1,85 @@
+{
+  "accuracy": 0.87376,
+  "n_test": 25000,
+  "correct": 21844,
+  "confusion_matrix": [
+    [
+      10922,
+      1578
+    ],
+    [
+      1578,
+      10922
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.87376,
+      "recall": 0.87376,
+      "f1-score": 0.87376,
+      "support": 12500.0
+    },
+    "1": {
+      "precision": 0.87376,
+      "recall": 0.87376,
+      "f1-score": 0.87376,
+      "support": 12500.0
+    },
+    "accuracy": 0.87376,
+    "macro avg": {
+      "precision": 0.87376,
+      "recall": 0.87376,
+      "f1-score": 0.87376,
+      "support": 25000.0
+    },
+    "weighted avg": {
+      "precision": 0.87376,
+      "recall": 0.87376,
+      "f1-score": 0.87376,
+      "support": 25000.0
+    }
+  },
+  "test_sha256": "7fa9b4023774d0e748053c2be24f91f5d5812c3ae74cde663183908caf63f9ac",
+  "classifier_sha256": "c7efdcab50bdeb5cfd31233d04aa1157cdec21b574ac34e5d8d7afc6f2185c3f",
+  "selection": {
+    "features": "bow",
+    "bow_scope": "5000",
+    "folds": 5,
+    "seed": 42,
+    "best_C": 1,
+    "cv_accuracy": 0.87572,
+    "candidates": [
+      {
+        "C": 0.01,
+        "mean": 0.8479599999999999,
+        "std": 0.0036428560224087705
+      },
+      {
+        "C": 0.1,
+        "mean": 0.87568,
+        "std": 0.005358507254823889
+      },
+      {
+        "C": 1,
+        "mean": 0.87572,
+        "std": 0.006595271033096357
+      },
+      {
+        "C": 10,
+        "mean": 0.85232,
+        "std": 0.006069728165247599
+      },
+      {
+        "C": 100,
+        "mean": 0.8283200000000001,
+        "std": 0.007331684663158952
+      }
+    ],
+    "checkpoint_sha256": null,
+    "fingerprint": {
+      "imdb.vocab": "01a13a306bd9e5a7826b8a0fc25a7a6017f143d86c1582f17857bb731fd252dc",
+      "train/labeledBow.feat": "d7061edc0ed10ad094c5c6da49648db0d9567b0415de2a86ce0e4ea2b1a3cff9"
+    },
+    "cv_scope": "Classifier-only CV with frozen word vectors. If vectors used labels, CV scores are conditional and NOT an unbiased end-to-end validation estimate."
+  }
+}

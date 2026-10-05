@@ -1,0 +1,41 @@
+{
+  "features": "combined",
+  "bow_scope": "5000",
+  "folds": 5,
+  "seed": 42,
+  "best_C": 0.1,
+  "cv_accuracy": 0.88924,
+  "candidates": [
+    {
+      "C": 0.01,
+      "mean": 0.8820399999999999,
+      "std": 0.003132794279872223
+    },
+    {
+      "C": 0.1,
+      "mean": 0.88924,
+      "std": 0.005603427522507988
+    },
+    {
+      "C": 1,
+      "mean": 0.88132,
+      "std": 0.006098655589554153
+    },
+    {
+      "C": 10,
+      "mean": 0.85416,
+      "std": 0.005852042378520497
+    },
+    {
+      "C": 100,
+      "mean": 0.8326799999999999,
+      "std": 0.005274239281640509
+    }
+  ],
+  "checkpoint_sha256": "979ff1d6ea8c7aba41625173a0c2c87516392ee0cdd2e8242c31cdf0c5e63998",
+  "fingerprint": {
+    "imdb.vocab": "01a13a306bd9e5a7826b8a0fc25a7a6017f143d86c1582f17857bb731fd252dc",
+    "train/labeledBow.feat": "d7061edc0ed10ad094c5c6da49648db0d9567b0415de2a86ce0e4ea2b1a3cff9"
+  },
+  "cv_scope": "Classifier-only CV with frozen word vectors. If vectors used labels, CV scores are conditional and NOT an unbiased end-to-end validation estimate."
+}

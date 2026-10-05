@@ -1,0 +1,9 @@
+[
+  ".venv/Scripts/python.exe",
+  "-u",
+  "-m",
+  "imdb2011",
+  "evaluate",
+  "--run",
+  "runs/repro01-full_unsup-vectors/classifier"
+]

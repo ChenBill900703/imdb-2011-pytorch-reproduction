@@ -1,0 +1,10 @@
+{
+  "variant": "semantic",
+  "dimension": 50,
+  "vocab_size": 5000,
+  "skip_top": 50,
+  "lambda_theta": 1.0,
+  "nu_words": 1.0,
+  "outer_steps": 20,
+  "seed": 42
+}

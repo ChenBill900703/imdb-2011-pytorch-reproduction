@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "models_checked": 8,
+  "n_test": 25000,
+  "same_frozen_sources": true,
+  "same_test_examples_and_labels": true,
+  "checks": [
+    {
+      "name": "BoW (bnc)",
+      "accuracy": 0.87376,
+      "metrics_match_predictions": true
+    },
+    {
+      "name": "BoW (delta)",
+      "accuracy": 0.88228,
+      "metrics_match_predictions": true
+    },
+    {
+      "name": "Semantic",
+      "accuracy": 0.87732,
+      "metrics_match_predictions": true
+    },
+    {
+      "name": "Semantic + BoW",
+      "accuracy": 0.88684,
+      "metrics_match_predictions": true
+    },
+    {
+      "name": "Full",
+      "accuracy": 0.87688,
+      "metrics_match_predictions": true
+    },
+    {
+      "name": "Full + BoW",
+      "accuracy": 0.8868,
+      "metrics_match_predictions": true
+    },
+    {
+      "name": "Full + unlabeled",
+      "accuracy": 0.88396,
+      "metrics_match_predictions": true
+    },
+    {
+      "name": "Full + unlabeled + BoW",
+      "accuracy": 0.89004,
+      "metrics_match_predictions": true
+    }
+  ],
+  "scope": "Artifact consistency only; does not prove equivalence to the author's implementation"
+}

@@ -1,0 +1,11 @@
+{
+  "variant": "full-unsup",
+  "dimension": 50,
+  "vocab_size": 5000,
+  "skip_top": 50,
+  "outer_steps": 2,
+  "theta_steps": 2,
+  "word_steps": 2,
+  "batch_size": 256,
+  "seed": 42
+}
